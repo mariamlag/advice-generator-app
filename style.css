@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Manrope';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(218, 23%, 16%);
+    width: 100%;
+    height: 100%;
+}
+.container{
+    background-color:  #313a48;
+    width: 34.3rem;
+    height: 31.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    margin-top: 12rem;
+}
+
+.advice{
+    font-weight: 800;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    color: #53FFAA;
+}
+.answer{
+    width: 29.5rem;
+    height: 13.2rem;
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-align: center;
+    color: #cee3e9;
+}
+
+.icon{
+    width: 6.4rem;
+    height: 6.4rem;
+    background-color: #53FFAA;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -3.2rem;
+    cursor: pointer;
+    
+}
+
+.desktop-line{
+    display: none;
+}
+.icon:hover{
+    box-shadow: 0px 0px 40px #53FFAA;
+}
+
+@media only screen and (min-width: 1440px){
+    .container{
+        width: 54rem;
+        height: 33.2rem;
+        border-radius: 1.5rem;
+    }
+    .advice{
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.4rem;
+    }
+    .answer{
+        width: 44.4rem;
+        height: 13.2rem;
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+    }
+    .mobile-line{
+        display: none;
+    }
+    .desktop-line{
+        display: flex;
+    }
+}
